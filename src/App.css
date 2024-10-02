@@ -1,58 +1,46 @@
-/* App.css */
-
-/* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.first{
+  background-color: #16910b;
 }
 
-html, body, #root {
-  height: 100%;
-}
-
-.App {
+.main{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #17cf6a;
 }
 
-h1 {
-  margin-bottom: 20px;
-  color: #333;
+.chart-container {
+  width: 50%;
+  max-width: 50vw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid #e60b3a;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #1e0c83;
+  box-shadow: 0 4px 8px rgba(214, 29, 5, 0.904);
 }
 
-label {
-  margin-right: 20px;
-  font-weight: bold;
-  color: #555;
+.select-label {
+  margin: 10px 0;
+  text-align: center;
+  color: aqua;
 }
 
 select {
-  padding: 5px 10px;
-  font-size: 14px;
-  margin-left: 10px;
-  border: 1px solid #ccc;
+  padding: 8px;
+  border: 2px solid #16910b;
+  text-align: center;
   border-radius: 4px;
+  margin-left: 10px;
 }
 
-/* Container for the chart */
-.chart-container {
-  width: 80%;
-  max-width: 1000px;
-  margin: 20px auto;
-  background: #bdbaba;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  .chart-container {
-      width: 95%;
-  }
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #912d2d;
+  border: 2px solid #1e0c83;
 }

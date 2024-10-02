@@ -1,14 +1,14 @@
 import React from 'react';
+import LiveChart from './CryptoChart';
 import './App.css';
-import CryptoChart from './CryptoChart';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Crypto Market Data</h1>
-      <CryptoChart />
+    <div>
+      <h1>Binance Market Data WebSocket Implementation</h1>
+      <LiveChart />
     </div>
   );
-}
+};
 
 export default App;
