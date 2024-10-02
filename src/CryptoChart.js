@@ -1,4 +1,4 @@
-
+ 
 
 import React, { useEffect, useRef, useState } from 'react';
 import { createChart } from 'lightweight-charts';
@@ -123,6 +123,7 @@ const CryptoChart = () => {
   }, [chartData, lineSeries]);
 
   return (
+  <div className='top'>
     <div className='first' >
       <div className='select-label'>
 
@@ -152,6 +153,7 @@ const CryptoChart = () => {
           style={{ position: 'relative', width: '100%', height: '400px' }}
         />
       </div>
+    </div>
     </div>
   );
 };
